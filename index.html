@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 프로필 카드</title>
+
+  <style>
+    /* 기본 설정 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+
+      /* 보라색 그라데이션 배경 */
+      background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2,
+        #a18cd1
+      );
+    }
+
+    /* 프로필 카드 */
+    .profile-card {
+      width: 350px;
+      padding: 40px 30px;
+      background: #ffffff;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* 프로필 이미지 플레이스홀더 */
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      background: #d1d1d1;
+      border: 5px solid #eeeeee;
+    }
+
+    /* 이름 */
+    .profile-name {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    /* 이름에 마우스를 올렸을 때 */
+    .profile-name:hover {
+      color: #8e44ad;
+    }
+
+    /* 한 줄 소개 */
+    .profile-intro {
+      font-size: 15px;
+      color: #777777;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    /* 좋아하는 것 */
+    .favorites {
+      text-align: left;
+      background: #f7f3fc;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .favorites h3 {
+      font-size: 18px;
+      color: #663399;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .favorites ul {
+      list-style: none;
+    }
+
+    .favorites li {
+      font-size: 15px;
+      color: #555555;
+      margin: 12px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-card">
+
+    <!-- 이미지 플레이스홀더 -->
+    <div class="profile-image"></div>
+
+    <!-- 이름 -->
+    <h1 class="profile-name">홍길동</h1>
+
+    <!-- 한 줄 소개 -->
+    <p class="profile-intro">
+      새로운 경험을 즐기고 매일 성장하는 사람입니다! ✨
+    </p>
+
+    <!-- 좋아하는 것 -->
+    <div class="favorites">
+      <h3>💜 좋아하는 것</h3>
+
+      <ul>
+        <li>☕ 커피 마시기</li>
+        <li>🎵 음악 감상하기</li>
+        <li>✈️ 여행 다니기</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
